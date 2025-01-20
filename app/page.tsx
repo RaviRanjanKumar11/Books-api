@@ -46,7 +46,7 @@ export default function Home() {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-4xl font-bold text-center mb-6">Books Library</h1>
+      <h1 className="text-4xl font-bold text-center mb-6 ">Books Library</h1>
 
       {isLoading ? (
         <p className="text-center text-blue-500">Loading books...</p>
@@ -55,7 +55,7 @@ export default function Home() {
       ) : (
         <>
           {books.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 border border-blue-900 shadow-2xl">
               {books.map((book: any) => (
                 <div
                   key={book.id}
