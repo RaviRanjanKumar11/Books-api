@@ -45,7 +45,7 @@ export default function Home() {
   const handlePreviousPage = () => setCurrentPage((prev) => Math.max(prev - 1, 1));
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 bg-blue-600">
       <h1 className="text-4xl font-bold text-center mb-6 ">Books Library</h1>
 
       {isLoading ? (
